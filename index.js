@@ -45,5 +45,5 @@ for(let [slug,url] of Object.entries(redirects)){
 
 
    //creating a index.html page for each directory
-   fs.writeFileSync(patch.join(folderPath,'index.html'),html)
+   fs.writeFileSync(path.join(folderPath,'index.html'),html)
 }
