@@ -34,4 +34,7 @@ const templateHTML = fs.readFileSync(path.join(__dirname,'template.html'), 'utf-
 // slug and url are variables used to loop in the object as key value pairs
 for(let [slug,url] of Object.entries(redirects)){
     console.log('creating htl pages for each redirect', slug)
+
+    const html = templateHTML.replaceAll('https://www.example.com',url)
+    console.log(html)
 }
