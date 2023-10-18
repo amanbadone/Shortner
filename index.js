@@ -41,4 +41,9 @@ for(let [slug,url] of Object.entries(redirects)){
    //create folder for each slug
    const folderPath = path.join(__dirname,'out',slug)
    fs.mkdirSync(folderPath, {recursive : true})
+
+
+
+   //creating a index.html page for each directory
+   fs.writeFileSync(patch.join(folderPath,'index.html'),html)
 }
