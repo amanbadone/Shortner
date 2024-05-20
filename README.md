@@ -56,7 +56,7 @@ We have the ability to create our own tailored URL redirector. In fact, we can e
 node index.js
 npx http-server out/
 ```
-## Demonstration
+## Usage
 
 Without Any Parameter / Redirect PATH
 ![The URL without any Parameter/PATH](redirectamanbadoneco.PNG)
